@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title><?php  echo $title; ?></title>
+		<link type="text/css" rel="stylesheet" href="<?php echo $staticurl; ?>/static/manage/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<script type="text/javascript" src="/static/manage/headjs/1.0.3/head.min.js"></script>
+		<script type="text/javascript">
+			<?php
+				echo 'var bodyId = "' . $bodyId . '";';
+			?>
+			head.load(
+				"<?php echo $staticurl; ?>/static/manage/adminLTE/2.3.0/css/AdminLTE.min.css",
+				"<?php echo $staticurl; ?>/static/manage/css/web.base.css?v=1",
+				"<?php echo $staticurl; ?>/static/manage/css/adminlogin/<?php echo $bodyId; ?>.css?v=1",
+				"<?php echo $staticurl; ?>/static/manage/jquery/1.12.3/jquery.min.js",
+				"<?php echo $staticurl; ?>/static/manage/bootstrap/3.3.5/js/bootstrap.min.js",
+				"<?php echo $staticurl; ?>/static/manage/knockout/3.4.0/knockout.min.js",
+				"<?php echo $staticurl; ?>/static/manage/knockout/validation/2.0.3/knockout.validation.min.js",
+				"<?php echo $staticurl; ?>/static/manage/knockout/validation/2.0.3/zh-CN.js",
+				"<?php echo $staticurl; ?>/static/manage/knockout/editables/0.9/ko.editables.js",
+				"<?php echo $staticurl; ?>/static/manage/adminLTE/2.3.0/js/app.min.js",
+				"<?php echo $staticurl; ?>/static/manage/js/web.base.js?v=1",
+				"<?php echo $staticurl; ?>/static/manage/js/adminlogin/<?php echo $bodyId; ?>.js?v=1"
+			);
+		</script>
+	</head>
